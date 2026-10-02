@@ -4,9 +4,9 @@ const autoEat = require('mineflayer-auto-eat').loader;
 
 const bot = mineflayer.createBot({
   host: '127.0.0.1',
-  port: 25566,        // ViaProxy port
+  port: 25568,        // ViaProxy listener port (or 25565 for direct server connection)
   username: 'YOUR_BOT_NAME',
-  version: '1.20.4'
+  version: '1.20.4'   // Translated by ViaProxy to backend server version (e.g. 26.3)
 });
 
 // Load plugins

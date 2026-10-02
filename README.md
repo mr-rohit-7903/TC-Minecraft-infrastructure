@@ -94,7 +94,7 @@ Before deploying this infrastructure, customize the placeholder values across th
 | RCON Server | `25575` | TCP | Remote command control for safe backups |
 | ViaProxy Bridge | `25568` | TCP | Cross-version Java proxy listener |
 | Geyser Bedrock | `19132` | UDP | Bedrock Edition client connections |
-| Mineflayer Bot | `25566` | TCP | Bot connection configured in `bot/index.js` |
+| Mineflayer Bot | `25568` | TCP | Bot connection to ViaProxy (or `25565` for direct server connection) |
 
 ---
 
