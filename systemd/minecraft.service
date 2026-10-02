@@ -1,0 +1,20 @@
+[Unit]
+Description=Minecraft Java Server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=YOUR_USER
+WorkingDirectory=/home/YOUR_USER/minecraft-server
+
+ExecStart=/usr/bin/java -Xms2G -Xmx4G -jar server.jar nogui
+
+Restart=on-failure
+RestartSec=10
+
+StandardInput=null
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

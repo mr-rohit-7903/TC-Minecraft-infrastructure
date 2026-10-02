@@ -1,0 +1,9 @@
+[Unit]
+Description=Automatic Minecraft Backup Every 24 Hours
+
+[Timer]
+OnCalendar=daily
+Persistent=true
+
+[Install]
+WantedBy=timers.target

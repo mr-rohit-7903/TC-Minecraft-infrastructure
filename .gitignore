@@ -1,0 +1,58 @@
+# Minecraft worlds
+world/
+world_nether/
+world_the_end/
+
+# Minecraft runtime/generated files
+logs/
+crash-reports/
+*.jar
+*.log
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+credentials.json
+secrets.json
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Backups
+backups/
+*.tar
+*.tar.gz
+*.zip
+
+# Temporary files
+*.tmp
+*.swp
+
+# ViaProxy & Geyser
+viaproxy/logs/
+viaproxy/jars/
+viaproxy/*.jar
+viaproxy/viabedrock/
+viaproxy/saves.json
+viaproxy/plugins/*.jar
+viaproxy/plugins/Geyser/cache/
+viaproxy/plugins/Geyser/locales/
+viaproxy/plugins/Geyser/packs/
+
+# Tunneling / Playit
+playit.toml
+playit-*.toml
+

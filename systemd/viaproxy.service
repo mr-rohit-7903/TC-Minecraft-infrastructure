@@ -1,0 +1,20 @@
+[Unit]
+Description=ViaProxy + Geyser Bedrock Bridge
+After=network-online.target minecraft.service
+Wants=network-online.target
+Requires=minecraft.service
+
+[Service]
+User=YOUR_USER
+WorkingDirectory=/home/YOUR_USER/viaproxy
+
+ExecStart=/usr/bin/java -Xms512M -Xmx1G -jar /home/YOUR_USER/viaproxy/ViaProxy-3.4.14.jar cli
+
+Restart=on-failure
+RestartSec=10
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
